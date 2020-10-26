@@ -12,10 +12,10 @@ inspecode:
 
     golint:
     - input: 'cmd/'
-      # auto-fix: true    # (timed-out)
+      auto-fix: true    # (timed-out)
       thresholds: {num-issues: 611}
     - input: 'internal/'
-      auto-fix: true    # (timed-out)
+      # auto-fix: true    # (timed-out)
       thresholds: {num-issues: 630}
     - ignore: ['cmd/', 'internal/']
       # auto-fix: true    # (timed-out)
