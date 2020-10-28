@@ -9,6 +9,6 @@ inspecode:
   tools:
 
     golint:
-      #- input: 'enterprise/internal/campaigns/syncer.go'
-      - input: 'enterprise/internal/campaigns'
+      #- input: 'enterprise/internal/campaigns'
+      - input: 'enterprise/internal/campaigns/syncer*'
         auto-fix: true
