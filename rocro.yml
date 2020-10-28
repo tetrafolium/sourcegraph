@@ -11,5 +11,5 @@ inspecode:
     golint:
       #- input: 'enterprise/internal/campaigns'
       #- input: 'enterprise/internal/campaigns/syncer*'
-      - input: 'enterprise/internal/campaigns/syncer.go'
+      - input: 'enterprise/internal/campaigns/testing/changeset_source.go'
         auto-fix: true
