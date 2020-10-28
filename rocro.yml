@@ -6,17 +6,9 @@ inspecode:
       go: 1.14    # (1.13 or later)
       nodejs: 10  # (version 8 or 10)
 
-  tasks:
-
   tools:
 
     golint:
-    - input: 'cmd/'
-      # auto-fix: true    # (timed-out)
-      thresholds: {num-issues: 611}
-    - input: 'internal/'
-      # auto-fix: true    # (timed-out)
-      thresholds: {num-issues: 630}
-    - ignore: ['cmd/', 'internal/']
-      auto-fix: true    # (timed-out)
-      thresholds: {num-issues: 513}
+      #- input: 'enterprise/internal/campaigns/syncer.go'
+      - input: 'enterprise/internal/campaigns'
+        auto-fix: true
