@@ -6,8 +6,6 @@ inspecode:
       go: 1.14    # (1.13 or later)
       nodejs: 10  # (version 8 or 10)
 
-  tasks:
-
   tools:
 
     golint:
