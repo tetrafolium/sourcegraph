@@ -51,6 +51,13 @@ inspecode:
     cpd:
       thresholds: {num-issues: 319}
 
+    csscomb:
+      auto-fix: true
+      thresholds: {num-issues: 999}
+
+    csslint:
+      thresholds: {num-issues: 999}
+
     errcheck:
       ignore: 'cmd/searcher/search/'
       thresholds: {num-issues: 330}
@@ -105,6 +112,10 @@ inspecode:
       auto-fix: true
       thresholds: {num-issues: 91}
 
+    phpcs:
+      auto-fix: true
+      thresholds: {num-issues: 999}
+
     prettier:
     - options: [--no-config]  # avoid error in './prettier.config.js'
       ignore: 'client/web/'
@@ -114,6 +125,12 @@ inspecode:
       input: 'client/web/'
       auto-fix: true
       thresholds: {num-issues: 893}
+
+    sass-lint:
+      thresholds: {num-issues: 999}
+
+    scss-lint:
+      thresholds: {num-issues: 999}
 
     staticcheck:
       thresholds: {num-issues: 72}
