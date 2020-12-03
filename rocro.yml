@@ -52,8 +52,10 @@ inspecode:
       thresholds: {num-issues: 319}
 
     csscomb:
-      auto-fix: true
+      # auto-fix: true    # avoid damn up pipeline
       thresholds: {num-issues: 999}
+      # UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'first' of null
+      # UnhandledPromiseRejectionWarning: [object Object]
 
     csslint:
       thresholds: {num-issues: 335}
