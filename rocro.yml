@@ -40,7 +40,7 @@ inspecode:
         - from: yamllint-task
           path: "/.reports/yamllint.sarif"
       machine: {cpu: 0.75}
-      thresholds: {num-issues: 53}
+      thresholds: {num-issues: 52}
 
   tools:
 
@@ -119,7 +119,7 @@ inspecode:
         --exclude:
           - PEAR.WhiteSpace.ScopeIndent
       auto-fix: true
-      thresholds: {num-issues: 999}   # too many issues detected: 1206 > 1000
+      thresholds: {num-issues: 465}
 
     prettier:
     - options: [--no-config]  # avoid error in './prettier.config.js'
@@ -137,11 +137,11 @@ inspecode:
     scss-lint:
       options:
         --exclude-linter:
-          - "EmptyLineBetweenBlocks"  #  300
-          - "Indentation"             # 1469
-          - "LeadingZero"             #  432
-          - "PropertySortOrder"       #  446
-      thresholds: {num-issues: 999}   # too many issues detected: 3120 > 1000
+          - "EmptyLineBetweenBlocks"
+          - "Indentation"
+          - "LeadingZero"
+          - "PropertySortOrder"
+      thresholds: {num-issues: 487}
 
     staticcheck:
       thresholds: {num-issues: 77}
