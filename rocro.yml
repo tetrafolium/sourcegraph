@@ -115,6 +115,9 @@ inspecode:
       thresholds: {num-issues: 91}
 
     phpcs:
+      options:
+        --exclude:
+          - PEAR.WhiteSpace.ScopeIndent
       auto-fix: true
       thresholds: {num-issues: 999}   # too many issues detected: 1206 > 1000
 
@@ -132,6 +135,12 @@ inspecode:
       thresholds: {num-issues: 999}   # TypeError: Cannot read property 'first' of null
 
     scss-lint:
+      options:
+        --exclude-linter:
+          - "EmptyLineBetweenBlocks"  #  300
+          - "Indentation"             # 1469
+          - "LeadingZero"             #  432
+          - "PropertySortOrder"       #  446
       thresholds: {num-issues: 999}   # too many issues detected: 3120 > 1000
 
     staticcheck:
