@@ -56,11 +56,11 @@ inspecode:
       thresholds: {num-issues: 999}
 
     csslint:
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 335}
 
     errcheck:
       ignore: 'cmd/searcher/search/'
-      thresholds: {num-issues: 330}
+      thresholds: {num-issues: 331}
 
     # fortify:
     #   thresholds: {num-issues: 999}
@@ -84,13 +84,13 @@ inspecode:
 
     golint:
     - input: 'cmd/'
-      # auto-fix: true    # (timed-out)
+      # auto-fix: true    # (timed-out) codelift#2054
       thresholds: {num-issues: 611}
     - input: 'internal/'
-      # auto-fix: true    # (timed-out)
+      # auto-fix: true    # (timed-out) codelift#2054
       thresholds: {num-issues: 630}
     - ignore: ['cmd/', 'internal/']
-      # auto-fix: true    # (timed-out)
+      # auto-fix: true    # (timed-out) codelift#2054
       thresholds: {num-issues: 513}
 
     gosec:
@@ -114,7 +114,7 @@ inspecode:
 
     phpcs:
       auto-fix: true
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 999}   # too many issues detected: 1206 > 1000
 
     prettier:
     - options: [--no-config]  # avoid error in './prettier.config.js'
@@ -127,13 +127,13 @@ inspecode:
       thresholds: {num-issues: 893}
 
     sass-lint:
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 999}   # TypeError: Cannot read property 'first' of null
 
     scss-lint:
-      thresholds: {num-issues: 999}
+      thresholds: {num-issues: 999}   # too many issues detected: 3120 > 1000
 
     staticcheck:
-      thresholds: {num-issues: 72}
+      thresholds: {num-issues: 77}
 
     tslint:
       auto-fix: true
