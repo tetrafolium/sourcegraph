@@ -11,5 +11,5 @@ inspecode:
   tools:
 
     sass-lint:
-      # config-file: '.rocro/sass-lint.yml'
+      config-file: '.rocro/sass-lint.yml'
       thresholds: {num-issues: 999}   # TypeError: Cannot read property 'first' of null
