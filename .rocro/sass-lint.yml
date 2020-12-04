@@ -2,7 +2,7 @@ options:
   merge-default-rules: true
 rules:
   property-sort-order:
-    - 1
+    - 0
     -
       order: alphabetical
       ignore-custom-properties: false
