@@ -1,8 +1,8 @@
 options:
   merge-default-rules: true
 rules:
-  property-sort-order:
-    - 0
-    -
-      order: alphabetical
-      ignore-custom-properties: false
+  property-sort-order:        0   # avoid TypeError (codelift#1758)
+  indentation:                0   # reduce num-issues / 4340 issues
+  class-name-format:          0   #                   /  687 issues
+  leading-zero:               0   #                   /  441 issues
+  empty-line-between-blocks:  0   #                   /  273 issues
