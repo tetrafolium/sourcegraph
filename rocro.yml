@@ -133,7 +133,7 @@ inspecode:
 
     sass-lint:
       config-file: '.rocro/sass-lint.yml'
-      thresholds: {num-issues: 999}   # TypeError: Cannot read property 'first' of null
+      thresholds: {num-issues: 660}
 
     scss-lint:
       options:
