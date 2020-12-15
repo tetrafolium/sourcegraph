@@ -40,7 +40,7 @@ inspecode:
         - from: yamllint-task
           path: "/.reports/yamllint.sarif"
       machine: {cpu: 0.75}
-      thresholds: {num-issues: 52}
+      thresholds: {num-issues: 57}
 
   tools:
 
