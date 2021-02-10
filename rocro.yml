@@ -48,14 +48,15 @@ inspecode:
       auto-fix: true
       thresholds: {num-issues: 487}
 
+    # coverity:
+    #   thresholds: {num-issues: 999}
+
     cpd:
       thresholds: {num-issues: 319}
 
     csscomb:
-      # auto-fix: true    # avoid damn up pipeline
-      thresholds: {num-issues: 999}
-      # UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'first' of null
-      # UnhandledPromiseRejectionWarning: [object Object]
+      auto-fix: true
+      thresholds: {num-issues: 223}
 
     csslint:
       thresholds: {num-issues: 335}
