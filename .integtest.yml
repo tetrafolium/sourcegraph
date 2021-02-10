@@ -1,0 +1,152 @@
+template:
+  issues:
+    - &CODE_SYNTAX_ISSUE
+      category: Code Syntax
+      type: Code Syntax Violation
+      severity: Error
+      weight: 1
+    - &CODE_STYLE_ISSUE
+      description: "This file should be formatted by Prettier."
+      category: Code Style
+      type: Code Style Violation
+      severity: Error
+      weight: 1
+
+default:
+  context:
+    languages:
+      - JavaScript
+      - TypeScript
+      - CSS
+      - HTML
+      - Markdown
+  report:
+#     issues:
+#       - <<: *CODE_SYNTAX_ISSUE
+#         description: "SyntaxError: Unexpected token, expected \"jsxTagEnd\""
+#         snippets:
+#           - src/syntax.jsx:16:7
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - src/array.js
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - src/conditions.js
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - src/css/color.css
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - src/html/sample.html
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - src/html/sample.vue
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - src/md/README.md
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - src/md/README.mdx
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - src/text.jsx
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - src/ts/arrow function.ts
+
+# default (auto-fix):
+#   context:
+#     languages:
+#       - JavaScript
+#       - TypeScript
+#       - CSS
+#       - HTML
+#       - Markdown
+#     config:
+#       autoFix: true
+#   report: {}
+#   diffFile: .auto-fix.default.diff
+
+# --with-node-modules:
+#   context:
+#     languages:
+#       - JavaScript
+#     config: 
+#       params:
+#         - --with-node-modules
+#   report:
+#     issues:
+#       - <<: *CODE_SYNTAX_ISSUE
+#         description: "SyntaxError: Unexpected token, expected \"jsxTagEnd\""
+#         snippets:
+#           - src/syntax.jsx:16:7
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - node_modules/modname/main.js
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - src/array.js
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - src/conditions.js
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - src/text.jsx
+
+# input filter:
+#   context:
+#     languages:
+#       - JavaScript
+#       - TypeScript
+#       - CSS
+#     config: &INPUT_FILTER_CONFIG
+#       inputPatterns:
+#         include:
+#           - "src/*.js"
+#           - "src/*.jsx"
+#         exclude:
+#           - "**/conditions.js"
+#           - "**/syntax.*"
+#   report:
+#     issues:
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - src/array.js
+#       - <<: *CODE_STYLE_ISSUE
+#         snippets:
+#           - src/text.jsx
+
+# input filter (auto-fix):
+#   context:
+#     languages:
+#       - JavaScript
+#       - TypeScript
+#       - CSS
+#     config:
+#       <<: *INPUT_FILTER_CONFIG
+#       autoFix: true
+#   report: {}
+#   diffFile: .auto-fix.input-filter.diff
+
+# input filter (no input):
+#   context:
+#     languages:
+#       - JavaScript
+#       - TypeScript
+#       - CSS
+#     config: &INPUT_FILTER_NO_INPUT_CONFIG
+#       inputPatterns:
+#         exclude: "*"
+#   report: {}
+
+# input filter (no input, auto-fix):
+#   context:
+#     languages:
+#       - JavaScript
+#       - TypeScript
+#       - CSS
+#     config:
+#       <<: *INPUT_FILTER_NO_INPUT_CONFIG
+#       autoFix: true
+#   report: {}
+#   diffFile: .auto-fix.input-filter.no-input.diff
