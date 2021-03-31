@@ -3,7 +3,7 @@ inspecode:
 
   global:
     runtime:
-      go: 1.14    # (1.13 or later)
+      go: 1.15    # (1.13 or later)
       nodejs: 10  # (version 8 or 10)
 
   tasks:
