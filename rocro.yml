@@ -3,7 +3,7 @@ inspecode:
 
   global:
     runtime:
-      go: 1.15    # (1.13 or later)
+      go: 1.14    # (1.13 or later)
       nodejs: 10  # (version 8 or 10)
 
   tasks:
@@ -109,7 +109,7 @@ inspecode:
       ignore:
         - '**/*_test.go'
         - '**/*.test.ts*'
-      thresholds: {num-issues: 484}
+      thresholds: {num-issues: 623}
 
     misspell:
       auto-fix: true
