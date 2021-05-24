@@ -76,3 +76,4 @@ Sourcegraph OSS is available freely under the [Apache 2 license](LICENSE.apache)
 
 All files in the `enterprise/` and `client/web/src/enterprise/` directories are subject to the [Sourcegraph Enterprise license](LICENSE.enterprise).
 
+
