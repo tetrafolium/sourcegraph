@@ -1,0 +1,4 @@
+codelift:
+  go-test:
+    auto-select: true
+    thresholds: {num-issues: 0}
